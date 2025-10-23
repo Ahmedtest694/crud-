@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- <div class="w-75 mx-auto my-4 p-5">
+    <div class="w-75 mx-auto my-4 p-5">
       <div class="form-floating mb-lg-4">
-        <input oninput="validateInputs(this)"
+        <input
+          oninput="validateInputs(this)"
           type="text"
           class="form-control is-valid is-invalid"
           id="productname"
@@ -25,7 +26,8 @@
       </div>
 
       <div class="form-floating mb-4">
-        <input oninput="validateInputs(this)"
+        <input
+          oninput="validateInputs(this)"
           type="number"
           class="form-control is-valid is-invalid"
           id="productprice"
@@ -37,15 +39,17 @@
         <label for="productprice">product price</label>
       </div>
       <div class="form-floating mb-4">
-        <input oninput="validateInputs(this)"
+        <input
+          oninput="validateInputs(this)"
           list="category-list"
           type="text"
           class="form-control"
           id="productcategory"
           placeholder="name@example.com"
         />
-         <div class="alert alert-danger d-none mb-2">
-          product category must be one of the following: Electronics, Clothing, Home & Kitchen, Books, Toys
+        <div class="alert alert-danger d-none mb-2">
+          product category must be one of the following: Electronics, Clothing,
+          Home & Kitchen, Books, Toys
         </div>
         <label for="productcategory">product category</label>
         <datalist id="category-list">
@@ -57,45 +61,50 @@
         </datalist>
       </div>
       <div class="form-floating mb-4">
-        <textarea oninput="validateInputs(this)"
+        <textarea
+          oninput="validateInputs(this)"
           class="form-control is-valid is-invalid"
           id="productdescription"
           placeholder="name@example.com"
         ></textarea>
-         <div class="alert alert-danger d-none mb-2">
-          product description must be 3 chars or above 
+        <div class="alert alert-danger d-none mb-2">
+          product description must be 3 chars or above
         </div>
         <label for="productdescription">product description</label>
       </div>
       <div class="form-floating mb-lg-4">
-        <input 
+        <input
           type="file"
-          class="form-control "
+          class="form-control"
           id="productimage"
           placeholder="name@example.com"
         />
-        
+
         <label for="productimage"> upload product image</label>
       </div>
-      <button onclick="addProduct()" class="btn btn-primary" id="add-btn">Add Product</button>
+      <button onclick="addProduct()" class="btn btn-primary" id="add-btn">
+        Add Product
+      </button>
 
-      <button onclick="updateProduct()" class="btn btn-warning " id="update-btn">Update Product</button>
+      <button onclick="updateProduct()" class="btn btn-warning" id="update-btn">
+        Update Product
+      </button>
 
-      <input oninput="searchProduct(this.value)" type="search" id="search" class="form-control my-4" placeholder="Search..." />
-      
-
+      <input
+        oninput="searchProduct(this.value)"
+        type="search"
+        id="search"
+        class="form-control my-4"
+        placeholder="Search..."
+      />
     </div>
     <div class="container">
       <div class="row" id="myrow">
-        <div class="col-md-2 ">
-       
-    </div>
+        <div class="col-md-2"></div>
       </div>
-    </div>  
-     -->
-  
+    </div>
 
-<div class="container w-75  ">
+    <!-- <div class="container w-75  ">
   <div class="row">
     <div class="col-md-4">
       <div class="item d-flex g-3 position-relative">
@@ -171,13 +180,9 @@
     <i class="fa-solid fa-arrow-left next"></i>
    
   </div>
-</div>
-
+</div> -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js">  </script>
-
-      
-  
+    <script src="js/index.js"></script>
   </body>
 </html>
