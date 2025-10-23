@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="w-75 mx-auto my-4 p-5">
+      <div class="form-floating mb-lg-4">
+        <input oninput="validateInputs(this)"
+          type="text"
+          class="form-control is-valid is-invalid"
+          id="productname"
+          placeholder="name@example.com"
+        />
+        <div class="alert alert-danger d-none mb-2">
+          product name must be at least 3 characters
+        </div>
+        <label for="productname">product name</label>
+      </div>
+
+      <div class="form-floating mb-4">
+        <input oninput="validateInputs(this)"
+          type="number"
+          class="form-control is-valid is-invalid"
+          id="productprice"
+          placeholder="name@example.com"
+        />
+        <div class="alert alert-danger d-none mb-2">
+          product price must be a positive number
+        </div>
+        <label for="productprice">product price</label>
+      </div>
+      <div class="form-floating mb-4">
+        <input oninput="validateInputs(this)"
+          list="category-list"
+          type="text"
+          class="form-control"
+          id="productcategory"
+          placeholder="name@example.com"
+        />
+         <div class="alert alert-danger d-none mb-2">
+          product category must be one of the following: Electronics, Clothing, Home & Kitchen, Books, Toys
+        </div>
+        <label for="productcategory">product category</label>
+        <datalist id="category-list">
+          <option value="Electronics"></option>
+          <option value="Clothing"></option>
+          <option value="Home & Kitchen"></option>
+          <option value="Books"></option>
+          <option value="Toys"></option>
+        </datalist>
+      </div>
+      <div class="form-floating mb-4">
+        <textarea oninput="validateInputs(this)"
+          class="form-control is-valid is-invalid"
+          id="productdescription"
+          placeholder="name@example.com"
+        ></textarea>
+         <div class="alert alert-danger d-none mb-2">
+          product description must be 3 chars or above 
+        </div>
+        <label for="productdescription">product description</label>
+      </div>
+      <div class="form-floating mb-lg-4">
+        <input 
+          type="file"
+          class="form-control "
+          id="productimage"
+          placeholder="name@example.com"
+        />
+        
+        <label for="productimage"> upload product image</label>
+      </div>
+      <button onclick="addProduct()" class="btn btn-primary" id="add-btn">Add Product</button>
+
+      <button onclick="updateProduct()" class="btn btn-warning " id="update-btn">Update Product</button>
+
+      <input oninput="searchProduct(this.value)" type="search" id="search" class="form-control my-4" placeholder="Search..." />
+      
+
+    </div>
+    <div class="container">
+      <div class="row" id="myrow">
+        <div class="col-md-2 ">
+       
+    </div>
+      </div>
+    </div>  
+     -->
+  
+
+<div class="container w-75  ">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="item d-flex g-3 position-relative">
+        <img class="w-100" src="image2/download (2).jfif" alt="">
+         <div class="layer position-absolute">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis eveniet aliquid quasi!</p>
+        </div>
+       
+       
+      </div>
+    </div>
+    <div class="col-md-4">  
+      <div class="item d-flex g-3 position-relative">
+        <img class="w-100" src="image2/download (3).jfif" alt="">
+        <div class="layer position-absolute">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis eveniet aliquid quasi!</p>
+        </div>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item d-flex g-3 position-relative">
+        <img class="w-100"  src="image2/download (4).jfif" alt="">
+         <div class="layer position-absolute">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis eveniet aliquid quasi!</p>
+        </div>
+       
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item d-flex g-3 position-relative">
+        <img class="w-100"  src="image2/download (5).jfif" alt="">
+         <div class="layer position-absolute">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis eveniet aliquid quasi!</p>
+        </div>
+       
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item d-flex g-3 position-relative">
+        <img class="w-100"  src="image/images (2).jfif" alt="">
+         <div class="layer position-absolute">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis eveniet aliquid quasi!</p>
+        </div>
+       
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item d-flex g-3 position-relative">
+        <img class="w-100"  src="image2/download (2).jfif" alt="">
+         <div class="layer position-absolute">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis eveniet aliquid quasi!</p>
+        </div>
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lightboxcontainer d-none">
+  <div class="lightbox">
+    <i class="fa-solid fa-arrow-right prev"></i>
+     <i class="fa-solid fa-circle-xmark close "></i>
+    <i class="fa-solid fa-arrow-left next"></i>
+   
+  </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js">  </script>
+
+      
+  
+  </body>
+</html>
